@@ -21,6 +21,6 @@ class EmailParser
     data = emails.split(", ")
     #parser = data.collect do |data|
     #end 
-    EmailParser
+    EmailParser.parse 
   end 
 end 
