@@ -18,9 +18,9 @@ class EmailParser
   end 
   
   def parse
-    data = emails.split(", ")
+    data = emails.split(/\s|,/)
     data.uniq!
-    data = [""] 
+    data -= [""] 
   end 
   
 end 
