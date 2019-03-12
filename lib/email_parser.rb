@@ -8,9 +8,9 @@ class EmailParser
   @@all=[]
   attr_accessor :emails, :parser 
   
-  def self.all
-    @@all 
-  end 
+  #def self.all
+    #@@all 
+  #end 
   
   def initialize(emails)
     @emails = emails
@@ -19,8 +19,8 @@ class EmailParser
   
   def self.parse(emails)
     data = emails.split(", ")
-    #parser = data.collect do |data|
-    #end 
+    parser = data.collect do |datum|
+    emails = 
     EmailParser.parse 
   end 
 end 
