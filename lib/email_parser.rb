@@ -14,13 +14,13 @@ class EmailParser
   
   def initialize(emails)
     @emails = emails
-    @@all << self 
+    #@@all << self 
   end 
   
-  def self.parse(emails)
+  def self.parse
     data = emails.split(", ")
-    parser = data.collect do |datum|
-    emails = 
-    EmailParser.parse 
+    data.uniq!
+    data = [""] 
   end 
+  
 end 
