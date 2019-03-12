@@ -5,8 +5,8 @@
 
 
 class EmailParser
-  @@all=[]
-  attr_accessor :emails, :parser 
+  #@@all=[]
+  attr_accessor :emails #, :parser 
   
   #def self.all
     #@@all 
@@ -17,7 +17,7 @@ class EmailParser
     #@@all << self 
   end 
   
-  def self.parse
+  def parse
     data = emails.split(", ")
     data.uniq!
     data = [""] 
