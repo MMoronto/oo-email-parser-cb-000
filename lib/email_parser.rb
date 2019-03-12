@@ -20,6 +20,7 @@ class EmailParser
   def self.parse(emails)
     data = emails.split(", ")
     #parser = data.collect do |data|
-  #end 
+    #end 
+    EmailParser
   end 
 end 
